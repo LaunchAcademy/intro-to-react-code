@@ -1,10 +1,9 @@
 import './app.scss';
 
 import React from "react"
-
 import ReactDOM from "react-dom"
 
-// import MagicElement from "./../MagicElement"
+import MagicElement from "./components/MagicElement"
 
 let resultString;
 
