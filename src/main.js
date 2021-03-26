@@ -1,35 +1,42 @@
-import './app.scss';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import React from "react"
-import ReactDOM from "react-dom"
+import Message from "./components/Message"
 
-import MagicElement from "./components/MagicElement"
+import "./app.scss"
 
-let resultString;
+// const magicNumber = 8
 
-const magicNumber = 4
+// let resultString;
 
-if (5 > magicNumber) {
-  resultString = "Totally wicked"
-} else {
-  resultString = "yo dawg, did you change the value of the magic number? Dude, not cool. "
-}
+// if (magicNumber > 5) {
+//   resultString = "I am text from the if-statement!"
+// } else {
+//   resultString = "I am text from the else-statement"
+// }
 
-// synthetic events and event listener
+// // synthetic events and event listener
 
-let alertFunction = () => {
-  return alert("Oooh that tickles")
-}
+// const alertFunction = () => {
+//   alert("Woooah, something happened, I was clicked!")
+//   // return alert(resultString)
+// }
 
-let divElement =
-  <div onClick={alertFunction}  >
-    <p>
-      { resultString }
-    </p>
-  </div>
 
+// const divElement = 
+//   <div onClick={alertFunction}>
+//     <h1>
+//       {resultString}
+//     </h1>
+//   </div>
+
+
+// let messageComponent = <Message />
+
+
+// const reactMessage = <h1>Goodbye static text, dynamic React is here!</h1>
 
 ReactDOM.render(
-  divElement,
+  <Message />,
   document.getElementById('app')
 )
